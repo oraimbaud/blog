@@ -1,0 +1,96 @@
+html {
+  font-size: 19px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: whitesmoke;
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+}
+
+p,
+ul,
+a,
+pre {
+  line-height: 1.4;
+}
+
+p,
+ul,
+a,
+small,
+code {
+  letter-spacing: 0.03em;
+}
+
+hr {
+  border: solid 1px lightgray;
+}
+
+.wrap {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+pre,
+code {
+  background-color: black;
+}
+
+code>a {
+  color: whitesmoke
+}
+
+code>a:visited {
+  color: darkgray
+}
+
+code {
+  color: whitesmoke;
+}
+
+pre,
+p code {
+  padding: 0.2em 0.3em;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+code {
+  font-family: "Menlo", "Lucida Console", Monaco, monospace;
+  font-size: 0.8em;
+}
+
+/*
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #2a2a2a;
+  }
+
+  body,
+  code {
+    color: lightyellow;
+  }
+
+  a {
+    color: gold;
+  }
+
+  a:visited {
+    color: rgb(70, 117, 131);
+  }
+
+  hr {
+    border-color: #3a3a3a;
+  }
+}
