@@ -6,23 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>semicolon</title>
   <meta name="description" content="Graphic design, type design and front-end web development.">
-  <meta name="google-site-verification" content="CZ1flx3JYihttgqLiApdFYJxwI-cT-QVLJb6q0VPidU" />
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="wrap">
-    <header>
-      <nav>
-        <!-- <a class="logo" href="/">;</a> -->
-        <hr>
-        <a href="/archive">Back to the archive</a>
-      </nav>
-    </header>
-    <main>
-      <h1>How to replace an element and its content using vanilla JS.</h1>
-      Olivier Raimbaud · <time>June 18, 2020</time>.
+    <nav>
       <hr>
+      <a href="/archive">Back to the archive</a>
+    </nav>
+    <header>
+      <h1>How to replace an element and its content using vanilla JS.</h1>
+      by Olivier Raimbaud, the <time>18<sup>th</sup> June of 2020</time>.
+      <hr>
+    </header>
+    <article>
       <p>This is a description subtitle not exeding two hundred chars.</p>
       <p>In this article, we’re going to learn:</p>
       <nav>
@@ -33,12 +31,12 @@
       </nav>
       <h2 id="insert-before">How to insert elements after a string. <a class="id" href="#">#</a></h2>
       <p>You can do it by doing <code>npm init -y</code> or by running the following:</p>
-      <pre><code>sudo apt install firefox
+      <pre data-pre="$ /dist"><code>sudo apt install firefox
 sudo apt update</code></pre>
       <p>You call it directly on the element you want to replace, and pass in the element to replace it with as an argument.</p>
       <p>With this approach, you would again create a new element using the <code><a href="#test">document.createElement()</a></code> method. Then, you would add any properties and content to it before using the <code>Node.replaceWith()</code> method to inject it into the DOM.</p>
       <p>You could also modify your <code>file.css</code>:</p>
-      <pre><code>body {
+      <pre data-pre="file.css"><code>body {
   background-color: whitesmoke;
   font-family: Georgia, 'Times New Roman', Times, 'Palatino', serif;
   letter-spacing: 0.02em;
@@ -46,13 +44,13 @@ sudo apt update</code></pre>
 }</code></pre>
       <p>So long people!</p>
       <footer>
-        <h4>Contribute to this article</h4>
+        <h3>Contribute to this article</h3>
         <ul>
           <li><a href="#">Comment on Twitter</a></li>
           <li><a href="#">Edit on GitHub</a></li>
         </ul>
       </footer>
-    </main>
+    </article>
     <footer>
       <hr>
       <small>I’m <a href="https://olivier.raimbaud.net">Olivier Raimbaud</a>, a <a href="">graphic designer</a>, <a href="">type designer</a> and <a href="">front-end web developer</a>. I also like to draw. You can <a href="">find me on GitHub</a> or <a href="">follow me on Twitter</a>. Feel free to <a href="mailto:olivier@raimbaud.net">contact me by mail</a>. Unless otherwise noted, all code is free to use under the <a href="">MIT License</a>. </small>
