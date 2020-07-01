@@ -4,20 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>semicolon</title>
-  <meta name="description" content="Graphic design, type design and front-end web development.">
+  <title>semicolon; a blog about web, typography and design.</title>
+  <meta name="description" content="a blog about web, typography and design.">
+  <meta name="author" content="Olivier Raimbaud">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="wrap">
     <nav>
-      <hr>
-      <a href="/archive">Back to the archive</a>
+      <p><a href="/archive.html">Go back to the archive</a></p>
     </nav>
     <header>
-      <h1>How to replace an element and its content using vanilla JS.</h1>
-      by Olivier Raimbaud, the <time>18<sup>th</sup> June of 2020</time>.
+      <img src="lion2.gif" alt="Mon logo">
+      <h1>How to replace an element and its content using vanilla JS</h1>
+      <time>June 18, 2020</time>.
       <hr>
     </header>
     <article>
@@ -29,19 +30,38 @@
           <li><a href="#">How to insert elements before a string</a></li>
         </ol>
       </nav>
-      <h2 id="insert-before">How to insert elements after a string. <a class="id" href="#">#</a></h2>
+      <p>Once some wise guy said:</p>
+      <blockquote>
+        <p>“Started from the bottom and now we’re here! Don’t trust on what you read on the internet.”</p>
+        <footer>
+          &mdash; Abraham Lincoln, <cite>History of a lonely man (2020).</cite>
+        </footer>
+      </blockquote>
+      <h2 id="insert-before">How to insert elements after a string</h2>
       <p>You can do it by doing <code>npm init -y</code> or by running the following:</p>
-      <pre data-pre="$ /dist"><code>sudo apt install firefox
+      <pre><code>sudo apt install firefox
 sudo apt update</code></pre>
-      <p>You call it directly on the element you want to replace, and pass in the element to replace it with as an argument.</p>
+      <p>You call it directly on the <em>element</em> you want to replace, and pass in the element to replace it with as an argument.</p>
       <p>With this approach, you would again create a new element using the <code><a href="#test">document.createElement()</a></code> method. Then, you would add any properties and content to it before using the <code>Node.replaceWith()</code> method to inject it into the DOM.</p>
-      <p>You could also modify your <code>file.css</code>:</p>
-      <pre data-pre="file.css"><code>body {
+      <p>You could also <strong>modify</strong> your <code>file.css</code>:</p>
+      <pre><code>body {
   background-color: whitesmoke;
   font-family: Georgia, 'Times New Roman', Times, 'Palatino', serif;
   letter-spacing: 0.02em;
   font-size: 1rem;
 }</code></pre>
+      <p>If you want to, I can show you my logo:</p>
+      <figure>
+        <img src="lion2.gif" alt="Mon logo">
+        <figcaption><small>This is my logo since a long time</small></figcaption>
+      </figure>
+      <h2 id="insert-before">How to insert elements after a string</h2>
+      <p>You can do it by doing <code>npm init -y</code> or by running the following:</p>
+      <pre data-pre="$ /dist"><code>sudo apt install firefox
+sudo apt update</code></pre>
+      <p>You call it directly on the <em>element</em> you want to replace, and pass in the element to replace it with as an argument.</p>
+      <p>With this approach, you would again create a new element using the <code><a href="#test">document.createElement()</a></code> method. Then, you would add any properties and content to it before using the <code>Node.replaceWith()</code> method to inject it into the DOM.</p>
+      <p>Hope you like it!</p>
       <p>So long people!</p>
       <footer>
         <h3>Contribute to this article</h3>
@@ -53,7 +73,9 @@ sudo apt update</code></pre>
     </article>
     <footer>
       <hr>
-      <small>I’m <a href="https://olivier.raimbaud.net">Olivier Raimbaud</a>, a <a href="">graphic designer</a>, <a href="">type designer</a> and <a href="">front-end web developer</a>. I also like to draw. You can <a href="">find me on GitHub</a> or <a href="">follow me on Twitter</a>. Feel free to <a href="mailto:olivier@raimbaud.net">contact me by mail</a>. Unless otherwise noted, all code is free to use under the <a href="">MIT License</a>. </small>
+      <small>I’m <a href="https://olivier.raimbaud.net">Olivier Raimbaud</a>, a <a href="">graphic designer</a>, <a href="">type designer</a> and <a href="">front-end web developer</a>. I&nbsp;also like to draw. You can <a href="">find me on GitHub</a> or <a href="">follow me on Twitter</a>. Feel free to <a href="mailto:olivier@raimbaud.net">contact me by mail</a>. Unless otherwise noted, all code is free to use under the <a href="">MIT License</a>. </small>
+      <hr>
+      <p><a href="#top">Go back to top</a></p>
     </footer>
   </div>
 </body>
