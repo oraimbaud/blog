@@ -65,7 +65,7 @@ table tr:not(:last-child) td:last-child {
   border-bottom: 2px solid lightgray;
 }
 
-/*
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #2a2a2a;
