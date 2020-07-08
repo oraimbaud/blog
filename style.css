@@ -122,6 +122,7 @@ blockquote>p::before {
 }
 
 img {
+  width: 100%;
   max-width: 300px;
   vertical-align: bottom;
 }
