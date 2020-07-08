@@ -15,9 +15,29 @@ h3 {
   line-height: 1.1;
 }
 
-hr {
+#archive ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+hr,
+#archive li {
   border: 0;
-  border-bottom: solid 1px #ddd;
+  border-top: solid 1px #ddd;
+}
+
+#archive li {
+  display: flex;
+  align-items: center;
+}
+
+#archive li span+span {
+  margin-left: 1em;
+}
+
+#about {
+  line-height: initial;
 }
 
 pre,
@@ -53,7 +73,11 @@ code {
 }
 
 a {
-  text-underline-offset: 0.2em;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 blockquote>p {
@@ -62,10 +86,7 @@ blockquote>p {
 
 img {
   width: 100%;
-}
-
-.about {
-  line-height: initial;
+  vertical-align: bottom;
 }
 
 
@@ -84,7 +105,8 @@ img {
     color: white;
   }
 
-  hr {
+  hr,
+  #archive li {
     border-color: #222;
   }
 
