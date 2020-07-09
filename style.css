@@ -33,40 +33,9 @@ h3 {
   line-height: 1.1;
 }
 
-#archive ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-hr,
-#archive li {
+hr {
   border: 0;
   border-top: solid 1px #ddd;
-}
-
-#archive li {
-  display: flex;
-}
-
-@media (max-width: 600px) {
-  #archive li {
-    flex-wrap: wrap;
-  }
-
-  #archive li>* {
-    flex-basis: 100%;
-  }
-}
-
-@media (min-width: 601px) {
-  #archive li {
-    align-items: center;
-  }
-
-  #archive li>*+* {
-    margin-left: 1em;
-  }
 }
 
 blockquote>footer,
@@ -162,9 +131,106 @@ figcaption {
   margin: 0 auto;
 }
 
+/* Archive */
+
+#archive ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#archive li ul {
+  border-top: solid 1px #ddd;
+}
+
+#archive li:not(:last-child) ul,
+#archive li li:not(:last-child) a>*+* {
+  border-bottom: solid 1px #ddd;
+}
+
+#archive li li:not(:first-child) {
+  margin-top: -1px;
+}
+
+#archive a {
+  display: flex;
+  position: relative;
+  color: inherit;
+}
+
+#archive a::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+#archive a:hover {
+  text-decoration: none;
+}
+
+#archive a:hover::before {
+  background-color: #f3f3f3;
+}
+
+#archive a>*+* {
+  margin-left: 1.5rem;
+  padding-right: 1rem;
+}
+
+#archive img {
+  max-width: 180px;
+}
+
+#archive a h3 {
+  position: relative;
+}
+
+#archive a:not(:visited) h3::before {
+  color: #0049e6;
+}
+
+#archive a:visited h3::before {
+  color: #fff;
+}
+
+#archive a:hover:visited h3::before {
+  color: #f3f3f3
+}
+
+#archive a h3::before {
+  content: "•";
+  position: absolute;
+  top: -0.3em;
+  left: -0.6em;
+  font-size: 170%;
+}
+
+@media (max-width: 600px) {
+  #archive a {
+    flex-wrap: wrap;
+  }
+
+  #archive a h3 {
+    margin-top: 0;
+  }
+
+  #archive a>* {
+    flex-basis: 100%;
+  }
+
+  #archive img {
+    max-width: 200px;
+    margin-left: 1.5rem;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: black;
+    background-color: #000;
   }
 
   body {
@@ -174,11 +240,10 @@ figcaption {
   h1,
   h2,
   h3 {
-    color: white;
+    color: #fff;
   }
 
   hr,
-  #archive li,
   blockquote>p::before,
   blockquote>footer::before,
   pre[data-pre]::before {
@@ -201,5 +266,29 @@ figcaption {
 
   a:visited {
     color: #869fc6;
+  }
+
+  /* Archive */
+
+  #archive li ul,
+  #archive li:not(:last-child) ul,
+  #archive li li:not(:last-child) a>*+* {
+    border-color: #333;
+  }
+
+  #archive a:hover::before {
+    background-color: #252525;
+  }
+
+  #archive a:not(:visited) h3::before {
+    color: #579aff;
+  }
+
+  #archive a:visited h3::before {
+    color: #000;
+  }
+
+  #archive a:hover:visited h3::before {
+    color: #252525
   }
 }
