@@ -155,16 +155,15 @@ figcaption {
 }
 
 #archive li ul {
-  border-top: solid 1px #ddd;
-}
-
-#archive li:not(:last-child) ul,
-#archive li li:not(:last-child) a>*+* {
   border-bottom: solid 1px #ddd;
 }
 
+#archive li li {
+  border-top: solid 1px #ddd;
+}
+
 #archive a {
-  display: flex;
+  display: inline-block;
   position: relative;
   color: inherit;
 }
@@ -173,8 +172,8 @@ figcaption {
   content: " ";
   position: absolute;
   top: -1px;
-  left: 0;
-  right: 0;
+  left: -16px;
+  right: -16px;
   bottom: -1px;
   z-index: -2;
 }
@@ -188,7 +187,9 @@ figcaption {
 }
 
 #archive img {
-  max-width: 200px;
+  width: 30vw;
+  margin-left: 1.5rem;
+  max-width: 150px;
 }
 
 #archive a time::after {
@@ -217,39 +218,12 @@ figcaption {
   color: #f3f3f3;
 }
 
-@media (max-width: 600px) {
-  #archive a {
-    flex-wrap: wrap;
-  }
-
-  #archive a::before {
-    left: -16px;
-    right: -16px;
-  }
-
-  #archive a h3 {
-    margin-top: 0;
-  }
-
-  #archive a>* {
-    flex-basis: 100%;
-  }
-
-  #archive img {
-    /* max-width: 200px; */
-    margin-left: 1.5rem;
-  }
+#archive a>* {
+  display: block;
 }
 
-@media (min-width: 601px) {
-  #archive a>*+* {
-    margin-left: 1rem;
-    padding-right: 1rem
-  }
-
-  #archive img {
-    max-width: 180px;
-  }
+#archive a>*:first-child:not(:only-child) {
+  float: right;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -299,8 +273,7 @@ figcaption {
   /* Archive */
 
   #archive li ul,
-  #archive li:not(:last-child) ul,
-  #archive li li:not(:last-child) a>*+* {
+  #archive li li {
     border-color: #333;
   }
 

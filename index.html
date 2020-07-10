@@ -4,78 +4,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to replace an element and its content using vanilla JS</title>
-  <meta name="description" content="This is a description subtitle not exeding two hundred chars.">
+  <title>Semicolon; a blog about web, design and typography</title>
+  <meta name="description" content="Description">
   <meta name="author" content="Olivier Raimbaud">
-  <link rel="stylesheet" href="style.css?v=1.8">
+  <link rel="stylesheet" href="style.css?v=1.9">
   <meta name="robots" content="noindex, nofollow">
 </head>
 
 <body>
-  <nav>
-    <p><a href="/archive.html">Back to the archive</a></p>
-    <hr>
-  </nav>
   <header>
-    <img src="illu.gif" alt="Mon logo">
-    <h1>How to replace an element and its content using vanilla JS</h1>
-    <p><time>June 18, 2020</time></p>
+    <h1>Semicolon; a blog about web, design and typography</h1>
+    <p>I’m <a href="https://olivier.raimbaud.net">Olivier Raimbaud</a>, a graphic designer, type designer and front-end web developer. I&nbsp;also like to draw. I write this blog to share my thoughts and ideas. You can <a href="" target="_blank" rel="noopener noreferrer">find me on GitHub</a> or <a href="" target="_blank" rel="noopener noreferrer">follow me on Twitter</a>. Feel free to <a href="mailto:olivier@raimbaud.net">contact me by mail</a>.</p>
     <!-- <hr> -->
   </header>
-  <article>
-    <p>This is a description subtitle not exeding two hundred chars.</p>
-    <p>In this article, we’re going to learn:</p>
-    <nav>
-      <ol>
-        <li><a href="#insert-before">How to insert elements after a string</a></li>
-        <li><a href="#">How to insert elements before a string</a></li>
-      </ol>
-    </nav>
-    <p>Once some wise guy said:</p>
-    <blockquote>
-      <p>“Started from the bottom and now we’re here! Don’t trust on what you read on the internet.”</p>
-      <footer>
-        <small>&mdash; Abraham Lincoln, <cite>History of a lonely man (2020).</cite></small>
-      </footer>
-    </blockquote>
-    <h2 id="insert-before">How to insert all elements just after with a custom</h2>
-    <p>You can do it by doing <code>npm init -y</code> or by running the following:</p>
-    <pre><code>sudo apt install firefox
-sudo apt update</code></pre>
-    <p>You call it directly on the <em>element</em> you want to replace, and pass in the element to replace it with as an argument.</p>
-    <p>With this approach, you would again create a new element using the <code><a href="#test" target="_blank" rel="noopener noreferrer">document.createElement()</a></code> method. Then, you would add any properties and content to it before using the <code>Node.replaceWith()</code> method to inject it into the DOM.</p>
-    <p>You could also <strong>modify</strong> your <code>file.css</code>:</p>
-    <pre data-pre="file.css"><code class="language-css">body {
-  background-color: whitesmoke;
-  font-family: Georgia, 'Times New Roman', Times, 'Palatino', serif;
-  letter-spacing: 0.02em;
-  font-size: 1rem;
-}</code></pre>
-    <p>If you want to, I can show you my logo:</p>
-    <figure>
-      <img src="illu.gif" alt="Mon logo">
-      <figcaption><small>This is my logo since a long time, an afro lion I drew for my son.</small></figcaption>
-    </figure>
-    <h2 id="insert-before">How to insert elements after a string</h2>
-    <p>You can do it by doing <code>npm init -y</code> or by running the following:</p>
-    <pre><code>sudo apt install firefox
-sudo apt update</code></pre>
-    <p>You call it directly on the <em>element</em> you want to replace, and pass in the element to replace it with as an argument.</p>
-    <p>With this approach, you would again create a new element using the <code><a href="#test" target="_blank" rel="noopener noreferrer">document.createElement()</a></code> method. Then, you would add any properties and content to it before using the <code>Node.replaceWith()</code> method to inject it into the DOM.</p>
-    <p>Hope you like it!</p>
-    <p>So long people!</p>
-    <footer>
-      <h3>Contribute</h3>
-      <p>Feel free to <a href="#" target="_blank" rel="noopener noreferrer">leave a comment on Twitter</a> or <a href="#" target="_blank" rel="noopener noreferrer">edit this page on GitHub</a></p>
-    </footer>
-  </article>
-  <footer id="about">
+  <main id="archive">
+    <h2>Archive</h2>
+    <p>Currently listing all articles.</p>
+    <ul>
+      <li>
+        <h3>July 2020</h3>
+        <ul>
+          <li>
+            <a href="/article.html">
+              <span>
+                <p><img src="illu.gif" alt="Article" loading="lazy"></p>
+              </span>
+              <span>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit maxime non sit modi</h3>
+                <p>Lorem ipsum dolor sit <code>amet</code> consectetur adipisicing elit. Possimus molestias. Lorem ipsum dolor sit <code>amet</code> consectetur adipisicing elit.</p>
+                <p><time>July 18</time></p>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="/test4">
+              <span>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit maxime non sit modi</h3>
+                <p>Lorem ipsum dolor sit consectetur adipisicing elit. Possimus molestias. Lorem ipsum dolor sit consectetur adipisicing elit.</p>
+                <p><time>July 18</time></p>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="/test5">
+              <span>
+                <p><img src="illu.gif" alt="Article" loading="lazy"></p>
+              </span>
+              <span>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit maxime non sit modi</h3>
+                <p>Lorem ipsum dolor sit <code>amet</code> consectetur adipisicing elit. Possimus molestias. Lorem ipsum dolor sit <code>amet</code> consectetur adipisicing elit.</p>
+                <p><time>July 18</time></p>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h3>July 2020</h3>
+        <ul>
+          <li>
+            <a href="/">
+              <span>
+                <p><img src="illu.gif" alt="Article" loading="lazy"></p>
+              </span>
+              <span>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit maxime non sit modi</h3>
+                <p>Lorem ipsum dolor sit <code>amet</code> consectetur adipisicing elit. Possimus molestias.</p>
+                <p><time>July 18</time></p>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h3>July 2020</h3>
+        <ul>
+          <li>
+            <a href="/test6">
+              <span>
+                <p><img src="illu.gif" alt="Article" loading="lazy"></p>
+              </span>
+              <span>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit maxime non sit modi</h3>
+                <p>Lorem ipsum dolor sit <code>amet</code> consectetur adipisicing elit. Possimus molestias.</p>
+                <p><time>July 18</time></p>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <span>
+                <p><img src="illu.gif" alt="Article" loading="lazy"></p>
+              </span>
+              <span>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit maxime non sit modi</h3>
+                <p>Lorem ipsum dolor sit <code>amet</code> consectetur adipisicing elit. Possimus molestias.</p>
+                <p><time>July 18</time></p>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </main>
+  <footer>
+    <p><small>Licenced under <a href="">MIT</a></small></p>
     <hr>
-    <p>
-      <small>I’m <a href="https://olivier.raimbaud.net">Olivier Raimbaud</a>, a graphic designer, type designer and front-end web developer. I&nbsp;also like to draw. You can <a href="" target="_blank" rel="noopener noreferrer">find me on GitHub</a> or <a href="" target="_blank" rel="noopener noreferrer">follow me on Twitter</a>. Feel free to <a href="mailto:olivier@raimbaud.net">contact me by mail</a>.</small>
-    </p>
-    <hr>
-    <p><a href="#top">Back to top</a></p>
+    <p><a href="#top">Go back to top</a></p>
   </footer>
 </body>
 
