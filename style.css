@@ -197,29 +197,25 @@ figcaption {
   max-width: 150px;
 }
 
-#archive a time::after {
+#archive a h3::before {
   content: " ";
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
-  border: solid 0.6rem;
+  border: solid 0.25em;
   border-radius: 100%;
-  margin: -0.2rem 0.5rem 0;
+  margin: -0.1em 0.15em 0 -0.6em;
 }
 
-#archive a:not(:visited) time {
+#archive a:not(:visited) h3::before {
   color: #0049e6;
 }
 
-#archive a:visited time {
-  color: inherit;
-}
-
-#archive a:visited time::after {
+#archive a:visited h3::before {
   color: #fff;
 }
 
-#archive a:hover:visited time::after {
+#archive a:hover:visited h3::before {
   color: #f3f3f3;
 }
 
@@ -288,19 +284,15 @@ figcaption {
     background-color: #252525;
   }
 
-  #archive a:not(:visited) time {
+  #archive a:not(:visited) h3::before {
     color: #579aff;
   }
 
-  #archive a:visited time {
-    color: inherit;
-  }
-
-  #archive a:visited time::after {
+  #archive a:visited h3::before {
     color: #000;
   }
 
-  #archive a:hover:visited time::after {
+  #archive a:hover:visited h3::before {
     color: #252525
   }
 }
