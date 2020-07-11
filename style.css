@@ -59,12 +59,14 @@ figcaption,
 }
 
 pre,
-*:not(pre)>code {
+*:not(pre)>code,
+kbd {
   padding: 0.1em 0.4em;
 }
 
 pre,
-*:not(pre)>code::before {
+*:not(pre)>code::before,
+kbd::before {
   background-color: #eee;
   border-radius: 2px;
   border: solid 1px #ddd;
@@ -83,18 +85,21 @@ pre[data-pre]::before {
   margin-bottom: 4px;
 }
 
-code {
+code,
+kbd {
   font-family: ui-monospace, "SF Mono", "Menlo", "Lucida Console", Monaco, monospace;
   display: inline-block;
 }
 
 blockquote>p,
 blockquote>footer,
-*:not(pre)>code {
+*:not(pre)>code,
+kbd {
   position: relative;
 }
 
-*:not(pre)>code::before {
+*:not(pre)>code::before,
+kbd::before {
   content: " ";
   position: absolute;
   width: 100%;
@@ -248,12 +253,14 @@ figcaption {
   hr,
   blockquote>p::before,
   blockquote>footer::before,
-  pre[data-pre]::before {
+  pre[data-pre]::before,
+  kbd {
     border-color: #333;
   }
 
   pre,
-  *:not(pre)>code::before {
+  *:not(pre)>code::before,
+  kbd:before {
     background-color: #222;
     border-color: #444;
   }
