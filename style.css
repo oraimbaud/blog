@@ -59,14 +59,9 @@ figcaption,
 }
 
 pre,
-*:not(pre)>code,
-kbd {
-  padding: 0.1em 0.4em;
-}
-
-pre,
-*:not(pre)>code::before,
+:not(pre)>code::before,
 kbd::before {
+  box-sizing: border-box;
   background-color: #eee;
   border-radius: 2px;
   border: solid 1px #ddd;
@@ -74,6 +69,7 @@ kbd::before {
 
 pre {
   white-space: pre-wrap;
+  padding: 0.1em 0.3em 0.15em;
 }
 
 pre[data-pre]::before {
@@ -91,14 +87,20 @@ kbd {
   display: inline-block;
 }
 
+:not(pre)>code,
+kbd {
+  line-height: 1;
+  padding: 0.2em 0.2em 0.25em;
+}
+
 blockquote>p,
 blockquote>footer,
-*:not(pre)>code,
+:not(pre)>code,
 kbd {
   position: relative;
 }
 
-*:not(pre)>code::before,
+:not(pre)>code::before,
 kbd::before {
   content: " ";
   position: absolute;
@@ -142,6 +144,7 @@ blockquote>p::before {
 
 img {
   display: block;
+  height: auto;
 }
 
 img,
@@ -255,7 +258,7 @@ figcaption {
   }
 
   pre,
-  *:not(pre)>code::before,
+  :not(pre)>code::before,
   kbd:before {
     background-color: #222;
     border-color: #444;
